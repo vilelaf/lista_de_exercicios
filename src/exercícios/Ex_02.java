@@ -35,12 +35,16 @@ public class Ex_02 {
 		
 		Scanner sc = new Scanner (System.in);
 		Locale.setDefault(Locale.US);
-
+		
+		
+		
 		try {
 			System.out.println("Digite altura e base: ");
 			double a = sc.nextDouble();
-			double b = sc.nextDouble();
-
+			Double b = sc.nextDouble();
+			while (a == null) {
+				Double a = sc.nextDouble();
+			}
 			Quadrado q = new Quadrado(a,b);
 			System.out.printf("Area do quadrado: "+ "%.2f\n", q.area());
 			System.out.printf("Perímetro do quadrado: "+ "%.2f\n", q.perimetro());
