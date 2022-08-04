@@ -22,7 +22,7 @@ public class Ex_10 {
 		
 		while (n/2 > 1) {
 			r = n%2;
-			// char a = (char) r; Não imprime valor algum.
+
  			numB = numB + String.valueOf(r);  
 			n = n/2;
 			System.out.println(n);
